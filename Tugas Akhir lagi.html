@@ -1,0 +1,56 @@
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/w3.css">
+<style>
+    body{
+        background-image: ('annabelle wallpaper.jpg');
+        background-color: rgb(250, 134, 134);
+    }
+
+</style>
+
+</head>
+
+<div class="w3-container">
+    <center>
+        <h1>Conjuring Universe</h1>
+</div>
+
+<div class="w3-bar w3-cyan w3-card-4">
+    <button class="w3-bar-item w3-button" onclick="openSequel('Conjurverse')">Conjurverse</button>
+    <button class="w3-bar-item w3-button" onclick="openSequel('Bogor')">Bogor</button>
+        <div class="w3-dropdown-hover">
+            <button class="w3-button">Icons</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <button class="w3-bar-item w3-button" onclick="openSequel('Annabelle')">Annabelle</button>
+                    <button class="w3-bar-item w3-button" onclick="openSequel('Valak')">Valak</button>
+                </div>
+        </div>
+</div>
+
+<div id="Conjurverse" class="w3-container Sequel w3-animate-top" style="display:none;">
+    <h1>Conjurverse</h1>
+    <hr>
+    Conjurverse is abreviation from Conjuring Universe
+</div>
+
+<div id="Bogor" class="w3-container Sequel" style="display:none;">
+    <h2>Bogor</h2>
+    <hr>
+    IPB
+</div>
+
+
+<script>
+    function openSequel(namaSequel) {
+     var i;
+     var x = document.getElementsByClassName("Sequel");
+     for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none"; 
+     }
+     document.getElementById(namaSequel).style.display = "block"; 
+    }
+
+    
+</script>

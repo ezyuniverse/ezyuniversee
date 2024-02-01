@@ -1,0 +1,41 @@
+<head>
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/w3.css">
+    <style>
+        h1
+            {
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-style: italic;
+            }
+        body
+            {
+                background-color: rgb(194, 245, 245);
+                font-family: Arial, Helvetica, sans-serif;
+            }
+    
+    
+    </style>
+    </head>
+    <div class="w3-container">
+        <center>
+            <h1>Membuat Menu Dengan Menggunakan W3 Bar</h1>
+        <hr>
+    </div>
+    
+    <div class="w3-bar w3-cyan w3-card-4">
+        <button class="w3-bar-item w3-button" onclick="openKota('Bandung')">Bandung</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('Garut')">Garut</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('Bogor')">Bogor</button>
+        <div class="w3-dropdown-hover">
+            <button class="w3-button">Animasi W3-CSS</button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <button class="w3-bar-item w3-button" onclick="openKota('Top')">Top</button>
+                <button class="w3-bar-item w3-button" onclick="openKota('Latihan11')">Latihan 11</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="Latihan11" class="w3-container kota w3-animate-top" style="display:none;">
